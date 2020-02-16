@@ -1,16 +1,23 @@
 <script>
-	export let name;
+	import PokemonDetail from 'Components/PokemonDetail/PokemonDetail';
+	import PokemonList from 'Components/PokemonList/PokemonList';
 </script>
 
 <style lang="scss">
-	h1 {
-		color: purple;
-		span {
-			font-size: 15px;
-		}
-	}
+.container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 50px 10px 30px 10px;
+}
 </style>
 
-<h1>
-	<span class="yoyo">Hello {name}!</span>
-</h1>
+<div>
+  <div class="container">
+    <PokemonDetail />
+  </div>
+  <PokemonList />
+</div>

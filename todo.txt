@@ -1,0 +1,10 @@
+pokemon categories:
+	generation https://pokeapi.co/api/v2/generation/1/
+	type - https://pokeapi.co/api/v2/type/1/
+	damage relations - https://pokeapi.co/api/v2/type/1/
+	pokedexes - https://pokeapi.co/api/v2/pokedex/1/
+	version grp - https://pokeapi.co/api/v2/version-group/1/
+	abilities - https://pokeapi.co/api/v2/ability/1/
+
+evolution chain
+pokemon moves

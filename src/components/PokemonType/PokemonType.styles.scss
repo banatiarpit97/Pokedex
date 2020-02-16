@@ -1,0 +1,27 @@
+.type {
+    display: inline-flex;
+    margin-right: .25em;
+    border-radius: 20px;
+    padding: .5em 1em;
+    color: white;
+    width: 85px;
+    justify-content: center;
+}
+.grass {
+    background-color: MediumSeaGreen;
+}
+.water {
+    background-color: DodgerBlue;
+}
+.poison {
+    background-color: RebeccaPurple;
+}
+.fire {
+    background-color: Tomato;
+}
+.flying {
+    background-color: #6ca3a9;
+}
+.normal {
+    background-color: gray;
+}
