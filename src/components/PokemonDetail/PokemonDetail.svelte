@@ -1,17 +1,17 @@
 <script>
   import { onMount } from "svelte";
   import PokemonType from "Components/PokemonType/PokemonType";
-  import {pokemonToShow} from 'Store/pokemonToShow';
+  import {pokemonListStore} from 'Store/pokemonList';
 
   let pokemonDetail = {};
 
   $: {
-    getPokemon($pokemonToShow);
+    getPokemon($pokemonListStore.activeIndex);
     window.scrollTo(0,0);
   }
 
   async function getPokemon () {
-    pokemonDetail = await fetch(`https://pokeapi.co/api/v2/pokemon/${$pokemonToShow}/`)
+    pokemonDetail = await fetch(`https://pokeapi.co/api/v2/pokemon/${$pokemonListStore.activeIndex}/`)
               .then(res => res.json());
   }
 </script>

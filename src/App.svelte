@@ -1,5 +1,6 @@
 <script>
-	import PokemonDetail from 'Components/PokemonDetail/PokemonDetail';
+  import PokemonDetail from 'Components/PokemonDetail/PokemonDetail';
+  import SearchBar from 'Components/SearchBar/SearchBar';
 	import PokemonList from 'Components/PokemonList/PokemonList';
 </script>
 
@@ -19,5 +20,6 @@
   <div class="container">
     <PokemonDetail />
   </div>
+  <SearchBar />
   <PokemonList />
 </div>
